@@ -196,18 +196,82 @@ Tarea: Etiquetas HTML5
 <p>Diez elevado al cuadrado se representa como 10<sup>2</sup> y su resultado es 100.</p>
 <p>La etiqueta "sup" se utiliza para representar texto en formato de superíndice.</p>
 
-<h1>Ejemplo de Time</h1>
+<h1>Ejemplo de time</h1>
 <p>Esta página fue desarrollada el <time datetime="2026-09-20">20 de septiembre de 2026</time>.</p>
 <p>La etiqueta "time" se utiliza para representar fechas y horas dentro de un documento HTML.</p>
 
-<h1>Ejemplo de Data</h1>
+<h1>Ejemplo de data</h1>
 <p>El lenguaje estudiado en esta tarea es <data value="HTML5">HTML versión 5</data>.</p>
 <p>La etiqueta "data" permite asociar un valor a un contenido visible dentro de la página.</p>
 
-<h1>Ejemplo de Span</h1>
+<h1>Ejemplo de span</h1>
 <p>Actualmente estamos aprendiendo <span>HTML5</span> en el curso de Diseño de Aplicaciones Web.</p>
 <p>La etiqueta "span" permite agrupar una parte específica del texto.</p>
 
+<h2>Ejemplo de la etiqueta a</h2>
+<p>
+ Para obtener más información sobre HTML puede visitar
+ https://www.w3schools.com/html/W3Schools</a>.
+</p>
+
+<h1>Etiquetas de enlace</h1>
+<h2>Ejemplo de la etiqueta a</h2>
+<p>
+ Para obtener más información sobre HTML puede visitar
+ https://www.w3schools.com/html/W3Schools</a>.
+</p>
+<p>La etiqueta "a" permite crear enlaces hacia otras páginas o recursos.</p>
+
+<h1>Ejemplo de Map y Area</h1>
+<p>Seleccione una provincia haciendo clic sobre el mapa:</p>
+<img src="img/mapaCR.jpg" alt="Mapa de provincias de Costa Rica" usemap="#mapaCostaRica">
+<map name="mapaCostaRica">
+ <area shape="rect" coords="390,130,610,420" href="https://es.wikipedia.org/wiki/Provincia_de_Alajuela" alt="Alajuela" target="_blank">
+ <area shape="rect" coords="70,80,420,520" href="https://es.wikipedia.org/wiki/Provincia_de_Guanacaste" alt="Guanacaste" target="_blank">
+ <area shape="rect" coords="590,210,720,470" href="https://es.wikipedia.org/wiki/Provincia_de_Heredia" alt="Heredia" target="_blank">
+ <area shape="rect" coords="650,440,860,600" href="https://es.wikipedia.org/wiki/Provincia_de_Cartago" alt="Cartago" target="_blank">
+ <area shape="rect" coords="480,470,810,690" href="https://es.wikipedia.org/wiki/Provincia_de_San_José" alt="San José" target="_blank">
+ <area shape="rect" coords="800,400,1100,750" href="https://es.wikipedia.org/wiki/Provincia_de_Limón" alt="Limón" target="_blank">
+ <area shape="rect" coords="280,480,1020,1000" href="https://es.wikipedia.org/wiki/Provincia_de_Puntarenas" alt="Puntarenas" target="_blank">
+</map>
+<p>La etiqueta "map" permite definir un mapa de imagen con diferentes zonas interactivas.</p>
+<p>La etiqueta "area" permite definir las zonas de la imagen que funcionarán como enlaces.</p>
+
+<h1>Ejemplo de Picture y Source</h1>
+<p>Reduzca el tamaño de la ventana para observar el cambio de imagen.</p>
+<picture>
+ <source media="(max-width: 768px)" srcset="img/jp.png">
+ <source media="(min-width: 769px)" srcset="img/mapaCR.jpg">
+</picture>
+<p>La etiqueta "picture" permite proporcionar diferentes versiones de una imagen.</p>
+<p>La etiqueta "source" permite indicar imágenes alternativas según determinadas condiciones.</p>
+
+<h1>Etiquetas Multimedia</h1>
+<!-- Ejemplo de las etiquetas audio y source -->
+<h2>Ejemplo de Audio</h2>
+<audio controls>
+ audio/ejemplo.mp3
+ El navegador no soporta la reproducción de audio.
+</audio>
+<p>La etiqueta "audio" permite insertar y reproducir archivos de audio en una página web.</p>
+<p>La etiqueta "source" permite especificar el archivo multimedia que debe reproducirse.</p>
+
+<h2>Ejemplo de Video</h2>
+<video width="600" controls>
+ video/ejemplo.mp4
+ El navegador no soporta la reproducción de video.
+</video>
+<p>La etiqueta "video" permite insertar y reproducir archivos de video en una página web.</p>
+
+<h2>Ejemplo de Video con Subtítulos</h2>
+<video width="600" controls>
+ video/ejemplo.mp4
+ video/subtitulos.vtt
+ El navegador no soporta la reproducción de video.
+</video>
+<p>La etiqueta "video" permite insertar archivos de video en una página web.</p>
+<p>La etiqueta "source" indica el archivo de video que debe reproducirse.</p>
+<p>La etiqueta "track" permite agregar pistas de texto al video, como subtítulos.</p>
 
 </body>
 </html>
